@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>MeaW Produscts</title>
+ <link rel="stylesheet" type="text/css" href="pro.css">
+
+ </head>
+  <body>
+    <header>
+        <a href="#" class=logo>MeaW</a>
+        <ul>
+            <li><a href="index.html"target="_blank">Home</a></li>
+            <li><a href="index.html"target="_blank">About</a></li>
+            <li><a href="status.html"target="_blank">Status</a></li>
+            <li><a href="#" class="active">Products</a></li>
+        </ul>
+    </header>
+    <section>
+        <a href="4.html"target="_blank" id=btn>MeaW Player4</a>
+        <a href="5.html"target="_blank" id=btn2>MeaW Player5</a>
+        <img src="star.png" id="star">
+        <img src="moon.png" id="moon">
+        <img src="back.png" id="back">
+        <img src="font.png" id="font">
+
+
+    </section>
+
+    <script>
+        let star = document.getElementById('star');
+        let back = document.getElementById('back');
+        let moon = document.getElementById('moon');
+        let font = document.getElementById('font');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let header = document.querySelector('header')
+
+        window.addEventListener('scroll',function(){
+         let value=window.scrollY;
+         star.style.left=value * 0.25 + 'px';
+         moon.style.top=value *1.05 + 'px';
+         font.style.top=value *0 + 'px';
+         back.style.top=value *0.5 + 'px';
+         text.style.marginRight=value * 4 + 'px';
+         text.style.marginTop=value * 1.5 + 'px'
+         btn.style.marginTop=value * 1.5 + 'px'
+         header.style.left=value * 0.25 + 'px';
+        })
+	</script>
+
+</body>
+</html>
