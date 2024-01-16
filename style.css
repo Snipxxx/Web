@@ -11,6 +11,7 @@ body
 {
    min-height: 100vh;
   background:  linear-gradient(#2b1055,#7597de);
+  overflow-x: hidden;
 }
 header
 {
@@ -104,6 +105,10 @@ section img#moon
   mix-blend-mode: screen;
   overflow: hidden;
 }
+section img#star
+{
+  overflow:hidden
+}
 
 section img#font
 {
@@ -118,7 +123,7 @@ section img#font
   color: #ffff;
   font-size: 6.7vw;
   white-space: nowrap;
-  overflow: hidden;
+  overflow-x: hidden;
 
   z-index: 7;
   
